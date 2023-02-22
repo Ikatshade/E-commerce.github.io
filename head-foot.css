@@ -98,7 +98,7 @@ footer{
     width:90%;
     height: 70%;
     font-family: 'roboto';
-    font-size: 1.125rem;
+    font-size: 1.75vmin;
 }
 .txt{
     flex-basis: 80%;
@@ -114,7 +114,7 @@ footer{
     justify-content: space-between;
 }
 .cprg span{
-    font-size: 0.8125rem;
+    font-size: 1.5vmin;
     font-weight: 300;
 }
 .foot-logo{
@@ -169,8 +169,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1.5625rem;
-    width: 1.5625rem;
+    height: 1.8vmin;
+    width: 1.8vmin;
     border-radius: 50%;
     background-color: #fff;
 }
