@@ -71,7 +71,7 @@
                   likeable
                 </span>
               </div>
-              <a class="btn" href="">
+              <a class="btn" href="shop.html">
                 <span>Shop now</span>
                 <iconify-icon icon="radix-icons:arrow-top-right"></iconify-icon>
               </a>
@@ -124,7 +124,7 @@
                 dignissim finibus. Donec bibendum orci id massa consectetur, ac faucibus justo consequat. Vivamus
                 imperdiet felis at blandit egestas.
               </span>
-              <a class="btn" href="">
+              <a class="btn" href="shop.html">
                 <span>Shop now</span>
                 <iconify-icon icon="radix-icons:arrow-top-right"></iconify-icon>
               </a>
@@ -438,7 +438,53 @@
                 document.getElementById('cart').style.display = 'flex'
                let l = document.getElementById('l')
                l.outerHTML = '<a href="signin.html" class="b"><span> Log Out</span></a>'
+
+
     }
+
+    let products = document.querySelectorAll(".col-pop")
+      products.forEach(element => {
+        element.addEventListener('click', (e) => {
+          let parent = e.target.closest(".col-pop")
+          console.log(parent)
+          let image = parent.querySelector(".image img").getAttribute('src')
+          let name = parent.querySelector(".price-tag .name").textContent
+          let price = parent.querySelector(".price-tag .price").textContent
+
+          let product = {
+            image: image,
+            name: name,
+            price: price,
+          }
+
+          localStorage.setItem("product", JSON.stringify(product))
+
+          window.location.replace("product-details.html")
+        })
+
+      });
+
+      let collections = document.querySelectorAll(".col-fc")
+        collections.forEach(element => {
+          element.addEventListener('click', (e) => {
+            let parentc = e.target.closest(".col-fc")
+            console.log(parentc)
+            let image = parentc.querySelector(".image img").getAttribute('src')
+            let name = parentc.querySelector(".price-tag .name").textContent
+            let price = parentc.querySelector(".price-tag .price").textContent
+
+            let product = {
+              image: image,
+              name: name,
+              price: price,
+            }
+
+            localStorage.setItem("product", JSON.stringify(product))
+
+            window.location.replace("product-details.html")
+          })
+
+        });
 
     
   </script>
