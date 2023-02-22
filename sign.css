@@ -34,7 +34,7 @@ body{
 }
 .img{
     flex-basis: 50%;
-    background: url('/img/sign.jpg');
+    background: url('img/sign.jpg');
     background-size: cover;
     background-position: center;
     box-shadow: 2px 0px 3px rgba(44, 28, 61, .3);

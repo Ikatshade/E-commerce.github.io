@@ -66,7 +66,36 @@
 
         </div>
     </div>
-    <script src="/scri.js"></script>
+    <script>
+        
+  let signup = document.getElementById("signup");
+  signup.addEventListener("click", (e) => {
+    e.preventDefault();
+
+     const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("pass").value;
+    const confpass = document.getElementById("pass-w").value;
+    let userList = JSON.parse(localStorage.getItem('userList') )|| [];
+   
+
+    const user = {
+      name: name,
+      email: email,
+      password: password,
+    };
+
+    userList.push(user);
+    console.log(userList);
+    alert("ok done");
+
+    localStorage.setItem("userList", JSON.stringify(userList));
+    alert("Data Added Successfully", JSON.stringify(user));
+
+    window.location.replace('/index.html')
+  });
+
+    </script>
 </body>
 
 </html>
