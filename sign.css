@@ -1,0 +1,117 @@
+*{
+    text-decoration: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    color: #090707;
+}
+.inner-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card{
+    height: 40rem;
+    width: 65rem;
+    perspective: 10000rem;
+    box-shadow: 1px 3px 5px rgba(44, 28, 61, .3);
+}
+.in-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.img{
+    flex-basis: 50%;
+    background: url('/img/sign.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 0px 3px rgba(44, 28, 61, .3);
+}
+.logo{
+    font-family: "great vibes";
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    color: #A0C3D2;
+}
+.form-part{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins';
+    gap: 2rem;
+}
+.form-parts{
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins';
+    gap: 5rem;
+}
+.mini-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:.8rem;
+}
+.title{
+    font-size: 1.5rem;
+}
+.inp{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    font-family: 'poppins';
+    font-weight: 300;
+}
+input{
+    padding: .4rem .5rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #090707;
+}
+.p{
+    font-weight: 300;
+    color: #8D8D8D;
+}
+button{
+    padding: .8rem .5rem;
+    margin-top: 1.9rem;
+    border-radius: 1rem;
+    border: 1px solid #090707;
+    background-color: #090707;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.redi a{
+    color: #A0C3D2;
+    font-size: 1.2rem;
+}
+.redi{
+    font-weight: 300;
+}

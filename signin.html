@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Yeseva+One&display=swap"
+        rel="stylesheet" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+
+    <title>Sign In</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner-content">
+
+            <div class="card">
+                <div class="in-content">
+
+                    <div class="img"></div>
+                    <div class="form-parts">
+
+                        <div class="pr">
+                            <span class="logo">ika</span>
+
+                            <div class="mini-text">
+                                <span class="title">Create an account</span>
+                                <span class="p">Let's get started</span>
+                            </div>
+                        </div>
+
+                        <form id="form1">
+                            <div class="inp">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+
+                            <div class="inp">
+                                <label for="pass">Password</label>
+                                <input type="password" name="pass" id="pass">
+                            </div>
+
+                            <button type="submit" id="soumis">Sign Up</button>
+                        </form>
+
+                        <span class="redi">
+                            Already have an account?
+                            <a href="signup.html">Sign Up</a>
+                        </span>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+        let form = document.getElementById("form1");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("pass").value;
+
+            const user = {
+                email: email,
+                password: password,
+            };
+
+            us = JSON.parse(localStorage.getItem("userList"));
+            let r 
+
+            us.forEach((element) => {
+                if (user.email === element.email && user.password === element.password) {
+                    r = element
+                }
+            });
+            
+            if (typeof r != "undefined")
+            {
+                console.log("user exists");
+                window.location.replace("/index.html");  
+            }
+            else{
+                window.location.reload()
+            }
+        });
+
+
+
+        
+
+            
+
+    </script>
+</body>
+
+</html>

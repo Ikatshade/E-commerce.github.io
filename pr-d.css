@@ -1,0 +1,136 @@
+*{
+    text-decoration: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100vw;
+    height: 150vh;
+    color: #090707;
+}
+.inner-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.center-div{
+    height: 80%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.c{
+    background-color: #C6DCE4;
+}
+img{
+    width: 40rem;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.details-div{
+    display: flex;
+    justify-content: center;
+}
+.ctn{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+.img-part{
+    flex-basis: 50%;
+}
+.details{
+    font-family: 'public sans';
+    flex-basis: 34%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.text{
+    display: flex;
+    flex-basis: 55%;
+    justify-content: center;
+    flex-direction: column;
+    gap:.2rem
+}
+.title{
+    font-size: 2.7rem;
+}
+.price{
+    font-size: 1.5rem;
+}
+.details p{
+    font-size: 1.15rem;
+}
+.attributes{
+    display: flex;
+    gap: .8rem;
+    width: 100%;
+    flex-basis: 15%;
+}
+.qq{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #090707;
+    flex-basis: 43%;
+    padding: .8rem .5rem ;
+    font-size: 1.7rem;
+    color: #b2B2B2;
+}
+input{
+    width: 3rem;
+    border: none;
+    font-size: 1.25rem;
+    text-align: center;
+
+}
+.qq span{
+    cursor: pointer;
+}
+select{
+    outline: none;
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    font-size: 1.25rem;
+    text-align: center;
+
+}
+
+.buttons{
+    display: flex;
+    gap: .8rem;
+    flex-basis: 15%;
+
+}
+.b1{
+    border: 1px solid #090707;
+    background-color: #090707;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1.2rem 3rem;
+
+}
+.b2{
+    border: 1px solid #C6DCE4;
+    background-color: #C6DCE4;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1.2rem 1rem;
+
+    
+}

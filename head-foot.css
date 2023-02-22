@@ -1,0 +1,245 @@
+
+header{
+    height:7vmin;
+    width:92.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.cart{
+    display: none;
+    
+}
+.el1{
+    flex-basis: 33%;
+    display: flex;
+    gap: 1rem;
+}
+.logo-space{
+    display: flex;
+    flex-basis: 33%;   
+    justify-content: center;
+
+}
+.logo{
+    font-family: "great vibes";
+    font-size: 3vmin;
+    text-transform: uppercase;
+}
+.el2{
+    flex-basis: 33%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.el1 a{
+    text-decoration: none;
+    color: #090707;
+}
+.el2 a{
+    text-decoration: none;
+    color: #090707;
+}
+.el1 a span{
+    font-family: "montserrat";
+    font-size: 1.5vmin;
+}
+.el2 a span{
+    font-family: "montserrat";
+    font-size: 1.5vmin;
+}
+.b{
+    padding: .8vmin;
+    border-radius: .8vmin;
+    border: 1px solid #090707;
+    background-color: #090707;
+
+}
+.b span{
+    color: #fff ;
+}
+
+footer{
+    display: flex;
+    width: 85%;
+    height: 31.25rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #090707;
+}
+.foot{
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.content{
+    display: flex;
+    width: 100%;
+    height:100%;
+
+}
+.foot-content{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+    height: 70%;
+    font-family: 'roboto';
+    font-size: 1.125rem;
+}
+.txt{
+    flex-basis: 80%;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cprg{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cprg span{
+    font-size: 0.8125rem;
+    font-weight: 300;
+}
+.foot-logo{
+    display: flex;
+    justify-content: center;
+    flex-basis: 20%;
+}
+.foot-corp{
+    height: 40%;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.foot-social{
+    flex-basis: 20%;
+    display: flex;
+    height:35%;
+    justify-content: center;
+    
+}
+.col-1{
+    display: flex;
+    height: 55%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.col{
+    display: flex;
+    height: 75%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.cnt{
+    display: flex;
+    height:60%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.foot-corp a{
+    color: #fff;
+    text-decoration: none;
+}
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+}
+.socials a{
+    color: #090707;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5625rem;
+    width: 1.5625rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+label{
+    font-weight: 500;
+}
+footer input[type=email]{
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #fff;
+}
+.inp{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    align-items: center;
+    
+}
+.inp a {
+    font-weight: 200;
+    color: #6F6F6f;
+}
+input:focus{
+   outline: none;
+}
+input::placeholder{
+    color: #6F6F6f;
+
+}
+.line{
+    border-bottom: 1px solid #fff;
+    width: 70%;
+}
+.line1{
+    width:100%;
+    height: 3.125rem;
+
+}
+.line2{
+    display:flex;
+    justify-content: right;
+    width:100%;
+    height: 3.125rem;
+
+}
+.end{
+    width:3.125rem;
+    height: 3.125rem;
+}
+.s1{
+    width:1.875rem;
+    height: 1.875rem;
+    background-color: #fff;
+}
+.s{
+    display: flex;
+    width:3.125rem;
+}
+.s2{
+    background-color: #fff;
+    height:1.25rem;
+    width: 1.25rem;
+}
+.blank{
+    width:1.875rem
+}
+.bl{
+    width:1.25rem
+}
